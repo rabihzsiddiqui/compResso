@@ -10,6 +10,10 @@
 }
 
 body {
-  background: #09090b;
+  background:
+    radial-gradient(ellipse 80% 55% at 50% -5%, rgba(239, 68, 68, 0.18) 0%, transparent 65%),
+    radial-gradient(ellipse 65% 45% at 85% 95%, rgba(245, 158, 11, 0.16) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 35% at 5% 55%, rgba(220, 38, 38, 0.10) 0%, transparent 55%),
+    #09090b;
   color: #fafafa;
 }

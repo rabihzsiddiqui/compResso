@@ -30,7 +30,7 @@ const STACK = [
 
 export default function About() {
   return (
-    <div className="min-h-screen bg-zinc-950">
+    <div className="min-h-screen">
       <Navbar />
 
       <main className="mx-auto max-w-2xl px-4 pb-24 pt-36">

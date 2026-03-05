@@ -178,7 +178,7 @@ export default function Home() {
     files.length > 0 && status !== "compressing" && status !== "loading";
 
   return (
-    <div className="min-h-screen bg-zinc-950">
+    <div className="min-h-screen">
       <Navbar />
 
       <main>
