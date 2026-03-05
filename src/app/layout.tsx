@@ -49,8 +49,8 @@ export default function RootLayout({
       >
         {/* Smoky amber background glows */}
         <div aria-hidden="true" className="pointer-events-none fixed inset-0 z-0 overflow-hidden">
-          <div className="absolute -top-32 left-1/2 h-[600px] w-[700px] -translate-x-1/2 rounded-full bg-amber-500/10 blur-[120px]" />
-          <div className="absolute bottom-0 right-1/4 h-[400px] w-[500px] rounded-full bg-amber-600/8 blur-[100px]" />
+          <div className="absolute -top-32 left-1/2 h-[600px] w-[700px] -translate-x-1/2 rounded-full bg-amber-500/25 blur-[120px]" />
+          <div className="absolute bottom-0 right-1/4 h-[400px] w-[500px] rounded-full bg-amber-600/20 blur-[100px]" />
         </div>
         <div className="relative z-10">{children}</div>
       </body>

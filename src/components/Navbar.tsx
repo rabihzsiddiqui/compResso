@@ -1,8 +1,23 @@
+"use client";
+
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 export function Navbar() {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 10);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
-    <header className="fixed top-0 z-50 w-full border-b border-zinc-800/80 bg-zinc-950/90 backdrop-blur-md">
+    <header
+      className={`fixed top-0 z-50 w-full bg-zinc-950/90 backdrop-blur-md transition-all duration-300 ${
+        scrolled ? "border-b border-zinc-800/80" : "border-b border-transparent"
+      }`}
+    >
       <div className="mx-auto flex max-w-5xl items-center justify-between px-4 py-4">
         <Link href="/" className="text-sm font-semibold text-white">
           compResso<span className="text-rose-500">.</span>
