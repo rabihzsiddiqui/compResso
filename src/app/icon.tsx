@@ -11,24 +11,36 @@ export default function Icon() {
           width: 32,
           height: 32,
           borderRadius: 6,
-          background: "linear-gradient(180deg, #9b0000 0%, #fde047 100%)",
+          overflow: "hidden",
           display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
+          flexDirection: "column",
+          position: "relative",
         }}
       >
-        <span
+        <div style={{ flex: 1, background: "#9b0000" }} />
+        <div style={{ flex: 1, background: "#fde047" }} />
+        <div
           style={{
-            fontFamily: "sans-serif",
-            fontWeight: 700,
-            fontSize: 20,
-            color: "white",
-            lineHeight: 1,
-            letterSpacing: "-0.5px",
+            position: "absolute",
+            inset: 0,
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
           }}
         >
-          c
-        </span>
+          <span
+            style={{
+              fontFamily: "sans-serif",
+              fontWeight: 700,
+              fontSize: 20,
+              color: "white",
+              lineHeight: 1,
+              letterSpacing: "-0.5px",
+            }}
+          >
+            c
+          </span>
+        </div>
       </div>
     ),
     { ...size }
