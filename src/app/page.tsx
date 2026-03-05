@@ -197,8 +197,11 @@ export default function Home() {
               </span>
             </div>
 
-            <h1 className="mb-4 text-5xl font-bold leading-[1.1] text-white md:text-7xl">
-              compResso<span className="text-rose-500">.</span>
+            <h1 className="mb-4 text-5xl font-bold leading-[1.1] md:text-7xl">
+              <span className="bg-gradient-to-r from-red-500 via-rose-400 to-amber-400 bg-clip-text text-transparent">
+                compResso
+              </span>
+              <span className="text-amber-400">.</span>
             </h1>
 
             <p className="mb-4 text-lg text-zinc-300 md:text-xl">
