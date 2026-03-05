@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: {
     template: "%s | compresso",
-    default: "compresso — browser-based video compression",
+    default: "compresso - browser-based video compression",
   },
   description:
     "compress video files locally in your browser using ffmpeg.wasm. no uploads, no tracking. h.264, h.265, av1, and vp9 support.",
