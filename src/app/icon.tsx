@@ -3,11 +3,7 @@ import { ImageResponse } from "next/og";
 export const size = { width: 32, height: 32 };
 export const contentType = "image/png";
 
-export default async function Icon() {
-  const font = await fetch(
-    "https://cdn.jsdelivr.net/npm/geist@1.3.1/dist/fonts/geist-sans/Geist-SemiBold.woff2"
-  ).then((res) => res.arrayBuffer());
-
+export default function Icon() {
   return new ImageResponse(
     (
       <div
@@ -23,8 +19,8 @@ export default async function Icon() {
       >
         <span
           style={{
-            fontFamily: "Geist",
-            fontWeight: 600,
+            fontFamily: "sans-serif",
+            fontWeight: 700,
             fontSize: 20,
             color: "white",
             lineHeight: 1,
@@ -35,9 +31,6 @@ export default async function Icon() {
         </span>
       </div>
     ),
-    {
-      ...size,
-      fonts: [{ name: "Geist", data: font, style: "normal", weight: 600 }],
-    }
+    { ...size }
   );
 }
