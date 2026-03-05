@@ -42,7 +42,15 @@ export function Footer() {
         <div className="mt-8 border-t border-zinc-800/60 pt-6">
           <p className="text-xs text-zinc-600">
             © {new Date().getFullYear()} compresso. all processing runs locally
-            in your browser.
+            in your browser.{" "}
+            <a
+              href="https://rabihs.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-zinc-500 hover:text-zinc-300 transition-colors duration-200"
+            >
+              built by rabih.
+            </a>
           </p>
         </div>
       </div>
