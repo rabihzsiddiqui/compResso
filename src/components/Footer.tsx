@@ -29,7 +29,7 @@ export function Footer() {
               about
             </Link>
             <a
-              href="https://github.com"
+              href="https://github.com/rabihzsiddiqui/compResso"
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm text-zinc-500 transition-colors hover:text-zinc-300"

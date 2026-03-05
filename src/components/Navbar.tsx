@@ -37,7 +37,7 @@ export function Navbar() {
             about
           </Link>
           <a
-            href="https://github.com"
+            href="https://github.com/rabihzsiddiqui/compResso"
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-full bg-rose-600 px-4 py-1.5 text-sm font-medium text-white transition-all duration-200 hover:bg-rose-500 hover:scale-105"

@@ -117,7 +117,7 @@ export default function About() {
             try compresso
           </Link>
           <a
-            href="https://github.com"
+            href="https://github.com/rabihzsiddiqui/compResso"
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-full border border-zinc-700 bg-zinc-800 px-6 py-3 text-sm font-medium text-zinc-300 transition-colors hover:bg-zinc-700"
